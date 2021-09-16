@@ -40,11 +40,11 @@ JC = javac
 
 CLASSES = \
 	JogoDaVelha/Tabuleiro.java\
-	JogoDaVelha/Jogador.java\
-	JogoDaVelha/Jogo.java\
-	JogoDaVelha/JogoDaVelha.java\
-	JogoDaVelha/Computador.java\
-	JogoDaVelha/Humano.java
+	Jogador.java\
+	Jogo.java\
+	JogoDaVelha.java\
+	Computador.java\
+	Humano.java
 	
 
 
