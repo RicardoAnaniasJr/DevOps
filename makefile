@@ -36,23 +36,23 @@ JC = javac
 # CLASSES is a macro consisting of 4 words (one for each java source file)
 #
 
-Computador.class: Computador.java
-        $(JCC) $(JFLAGS) Computador.java
+Computador.class:	Computador.java
+        $(JCC)	$(JFLAGS)	Computador.java
 
-Humano.class: Humano.java
-        $(JCC) $(JFLAGS) Humano.java
+Humano.class:	Humano.java
+        $(JCC)	$(JFLAGS)	Humano.java
 
-Jogador.class: Jogador.java
-        $(JCC) $(JFLAGS) Jogador.java
+Jogador.class:	Jogador.java
+        $(JCC)	$(JFLAGS)	Jogador.java
 	
-Jogo.class: Jogo.java
-        $(JCC) $(JFLAGS) Jogo.java
+Jogo.class:	Jogo.java
+        $(JCC)	$(JFLAGS)	Jogo.java
 
-JogoDaVelha.class: JogoDaVelha.java
-        $(JCC) $(JFLAGS) JogoDaVelha.java
+JogoDaVelha.class:	JogoDaVelha.java
+        $(JCC)	$(JFLAGS)	JogoDaVelha.java
 
-Tabuleiro.class: Tabuleiro.java
-        $(JCC) $(JFLAGS) Tabuleiro.java
+Tabuleiro.class:	Tabuleiro.java
+        $(JCC)	$(JFLAGS)	Tabuleiro.java
 	
 	
 
