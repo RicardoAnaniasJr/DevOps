@@ -44,7 +44,7 @@ CLASSES = \
 	JogoDaVelha/Jogador.java\
 	JogoDaVelha/Jogo.java\
 	JogoDaVelha/JogoDaVelha.java\
-	JogoDaVelha/Tabuleiro.java\
+	JogoDaVelha/Tabuleiro.java
 
 
 #
