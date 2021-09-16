@@ -2,6 +2,7 @@
 # define compiler and compiler flag variables
 #
 
+JFLAGS = -d
 JC = javac
 
 
@@ -30,7 +31,7 @@ JC = javac
 #
 
 .java.class:
-	$(JC) $*.java
+	$(JC)	$(JFLAGS)	$*.java
 
 
 #
@@ -38,7 +39,8 @@ JC = javac
 #
 
 CLASSES = \
-	JogoDaVelha/*.java
+	JogoDaVelha/Tabuleiro.java
+	
 	
 
 
