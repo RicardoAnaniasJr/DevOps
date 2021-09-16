@@ -2,7 +2,7 @@
 # define compiler and compiler flag variables
 #
 
-JFLAGS = -g
+JFLAGS =	-cp	JogoDaVelha;*
 JC = javac
 
 
@@ -38,7 +38,7 @@ JC = javac
 # CLASSES is a macro consisting of 4 words (one for each java source file)
 #
 
-all:javac	-cp	JogoDaVelha;*	*.java
+all=*.java
 
 
 
