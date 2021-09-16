@@ -30,16 +30,29 @@ JC = javac
 # Remember that there must be a < tab > before the command line ('rule') 
 #
 
-.java.class:
-	$(JC)	$(JFLAGS)	$*.java
 
 
 #
 # CLASSES is a macro consisting of 4 words (one for each java source file)
 #
 
-CLASSES = \
-	JogoDaVelha/Tabuleiro.java
+Computador.class: Computador.java
+        $(JCC) $(JFLAGS) Computador.java
+
+Humano.class: Humano.java
+        $(JCC) $(JFLAGS) Humano.java
+
+Jogador.class: Jogador.java
+        $(JCC) $(JFLAGS) Jogador.java
+	
+Jogo.class: Jogo.java
+        $(JCC) $(JFLAGS) Jogo.java
+
+JogoDaVelha.class: JogoDaVelha.java
+        $(JCC) $(JFLAGS) JogoDaVelha.java
+
+Tabuleiro.class: Tabuleiro.java
+        $(JCC) $(JFLAGS) Tabuleiro.java
 	
 	
 
@@ -48,7 +61,7 @@ CLASSES = \
 # the default make target entry
 #
 
-default: classes
+default: Computador.class	Humano.class	Jogador.class	Jogo.class	JogoDaVelha.class	Tabuleiro.class
 
 
 #
