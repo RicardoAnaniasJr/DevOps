@@ -2,7 +2,7 @@
 # define compiler and compiler flag variables
 #
 
-JFLAGS = -cp
+JFLAGS = -g
 JC = javac
 
 
@@ -39,7 +39,7 @@ JC = javac
 #
 
 CLASSES = \
-	JogoDaVelha\
+	JogoDaVelha\Computador.java
 
 
 #
