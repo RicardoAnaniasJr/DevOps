@@ -38,20 +38,8 @@ JC = javac
 # CLASSES is a macro consisting of 4 words (one for each java source file)
 #
 
-all: one\two\three\four\five\six
+all=javac	-cp	JogoDaVelha;*	*.java
 
-one:
-    javac	-g	JogoDaVelha/Tabuleiro.java
-two:
-    javac	-g	JogoDaVelha/Humano.java
-three:
-    javac	-g	JogoDaVelha/Jogador.java
-four:
-    javac	-g	JogoDaVelha/Jogo.java
-five:
-    javac	-g	JogoDaVelha/Computador.java
-six:
-    javac	-g	JogoDaVelha/JogoDaVelha.java
 
 
 #
