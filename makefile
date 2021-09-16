@@ -39,7 +39,7 @@ JC = javac
 #
 
 CLASSES = \
-	JogoDaVelha/Tabuleiro.java\
+	Tabuleiro.java\
 	Jogador.java\
 	Jogo.java\
 	JogoDaVelha.java\
