@@ -2,7 +2,7 @@
 # define compiler and compiler flag variables
 #
 
-JFLAGS = -d
+JFLAGS = -g
 JC = javac
 
 
@@ -30,38 +30,28 @@ JC = javac
 # Remember that there must be a < tab > before the command line ('rule') 
 #
 
+.java.class:
+	$(JC) $(JFLAGS) $*.java
 
 
 #
 # CLASSES is a macro consisting of 4 words (one for each java source file)
 #
 
-Computador.class:	Computador.java
-        $(JCC)	$(JFLAGS)	Computador.java
-
-Humano.class:	Humano.java
-        $(JCC)	$(JFLAGS)	Humano.java
-
-Jogador.class:	Jogador.java
-        $(JCC)	$(JFLAGS)	Jogador.java
-	
-Jogo.class:	Jogo.java
-        $(JCC)	$(JFLAGS)	Jogo.java
-
-JogoDaVelha.class:	JogoDaVelha.java
-        $(JCC)	$(JFLAGS)	JogoDaVelha.java
-
-Tabuleiro.class:	Tabuleiro.java
-        $(JCC)	$(JFLAGS)	Tabuleiro.java
-	
-	
+CLASSES = \
+	JogoDaVelha/Computador.java	\
+	JogoDaVelha/Humano.java	\
+	JogoDaVelha/Jogador.java	\
+	JogoDaVelha/Jogo.java	\
+	JogoDaVelha/JogoDaVelha.java	\
+	JogoDaVelha/Tabuleiro.java	\
 
 
 #
 # the default make target entry
 #
 
-default: Computador.class	Humano.class	Jogador.class	Jogo.class	JogoDaVelha.class	Tabuleiro.class
+default: classes
 
 
 #
