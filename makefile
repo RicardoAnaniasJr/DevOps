@@ -2,7 +2,7 @@
 # define compiler and compiler flag variables
 #
 
-JFLAGS =	-cp	JogoDaVelha;*
+JFLAGS = -g
 JC = javac
 
 
@@ -38,15 +38,15 @@ JC = javac
 # CLASSES is a macro consisting of 4 words (one for each java source file)
 #
 
-all=*.java
-
+CLASSES = \
+	JogoDaVelha/*.java
 
 
 #
 # the default make target entry
 #
 
-default: all
+default: classes
 
 
 #
