@@ -2,7 +2,7 @@
 # define compiler and compiler flag variables
 #
 
-JFLAGS = -d
+JFLAGS = -g
 JC = javac
 
 
