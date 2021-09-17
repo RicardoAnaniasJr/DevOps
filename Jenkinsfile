@@ -1,7 +1,7 @@
 node {
     checkout scm
     stage('Build') {
-        sh 'make -n'
+        sh 'make'
     }
     stage('Test') {
         echo 'Testing...'
