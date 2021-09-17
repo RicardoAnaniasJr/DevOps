@@ -46,7 +46,7 @@ CLASSES = \
 # the default make target entry
 #
 
-default: CLASSES
+default: classes
 
 
 #
